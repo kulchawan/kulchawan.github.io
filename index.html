@@ -1,19 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kulchawan's Profile</title>
+    <title>เว็บเพจแนะนำตัวนิสิต</title>
 </head>
-<body>
-    <h1>Kulchawan Jitthira</h1>
-    <hr>
 
-    <h2>ชื่อ: นายกุลชวาล จิตรธิรา</h2>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Kulchawan Jitthira Profile</h1>
+        <p>ยินดีต้อนรับสู่เว็บเพจแนะนำตัวของฉัน</p>
+        <hr>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">ข้อมูลส่วนตัว</a></li>
+            <li><a href="#skills">ความสนใจและทักษะ</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1 -->
+        <section id="about">
+            <h2><u>ข้อมูลส่วนตัว</u></h2>
+            <img src="https://supreme.swu.ac.th/file_staff_upload/file_student_pic/2568_1/68102010191.jpg" alt="รูปภาพแนะนำตัวนิสิต" width="15%">
+
+            <p>
+                ชื่อ: <b>นายกุลชวาล จิตรธิรา</b><br>
+                คณะ: <b>วิทยาศาสตร์</b> สาขา: <b>วิทยาการคอมพิวเตอร์</b><br>
+                <b>มหาวิทยาลัยศรีนครินทรวิโรฒ</b>
+            </p>
+
+            <table border="1">
+                <thead>
+                <tr>
+                    <th>รายการ</th>
+                    <th>รายละเอียด</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>วันเกิด</td>
+                    <td>15 มีนาคม พ.ศ.2550</td>
+                </tr>
+                <tr>
+                    <td>อายุ</td>
+                    <td>19 ปี</td>
+                </tr>
+                <tr>
+                    <td>งานอดิเรก</td>
+                    <td>ดูหนัง เที่ยว</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="skills">
+            <h2><u>ความสนใจและทักษะ</u></h2>
+
+            <h3>ความสนใจ</h3>
+            <ul>
+                <li>การพัฒนาเว็บไซต์</li>
+                <li>การเขียนโปรแกรม</li>
+                <li>เทคโนโลยีใหม่ ๆ</li>
+            </ul>
+
+            <h3>ทักษะ</h3>
+            <ol>
+                <li>HTML พื้นฐาน</li>
+                <li>Python เบื้องต้น</li>
+                <li>ทำความเข้าใจได้เร็ว</li>
+            </ol>
+
+            <h3>
+                แหล่งเรียนรู้ที่ชอบ:
+                <a href="https://www.w3schools.com" target="_blank" rel="noopener">
+                W3Schools
+                </a>
+            </h3>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="contact">
+            <h2><u>ช่องทางการติดต่อ</u></h2>
+
+            <form>
+                <p>
+                <label for="name">ชื่อ:</label><br>
+                <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                <label for="email">อีเมล:</label><br>
+                <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                <label for="topic">หัวข้อที่ต้องการติดต่อ:</label><br>
+                <select id="topic" name="topic">
+                    <option value="study">การเรียน</option>
+                    <option value="project">โปรเจกต์</option>
+                    <option value="other">อื่น ๆ</option>
+                </select>
+                </p>
+
+                <p>
+                <label for="message">ข้อความ:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea>
+                </p>
+
+                <button type="submit">ส่งข้อความ</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-     <p>เบอร์โทร 0623426655<br>
-     Email <a href="mailto:kulchawa.jitthira@g.swu.ac.th">kulchawa.jitthira@g.swu.ac.th</a><br>
-     </p>
+        <hr>
+        <p><b>ติดต่อเพิ่มเติม</b><br>
+            เบอร์โทร : 0623426655<br>
+            Email : <a href="mailto:kulchawan.jitthira@g.swu.ac.th">kulchawan.jitthira@g.swu.ac.th</a><br>
+            </p>
+        <p>© 2026 เว็บเพจแนะนำตัวนิสิต</p>
     </footer>
+
 </body>
 </html>
